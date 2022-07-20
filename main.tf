@@ -42,7 +42,6 @@ module "vpc" {
 
   azs             = data.aws_availability_zones.available.names
   private_subnets = var.aws_private_subnet_cidrs
-  public_subnets  = var.aws_public_subnet_cidrs
 
   enable_nat_gateway = true
 }
